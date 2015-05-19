@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hnW-f3-SDu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hnW-f3-SDu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Barcelona-->
@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vmo-eK-lQn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1c5-xL-QCD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="QRz-gO-UmS">
@@ -102,6 +103,15 @@
                                     <action selector="sendPostcardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3d-OZ-PNd"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqZ-KY-j8J">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="159" width="201" height="32"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -111,6 +121,7 @@
                                 <exclude reference="drS-Pp-8aj"/>
                                 <exclude reference="91k-qB-th4"/>
                                 <exclude reference="5CE-Ud-2co"/>
+                                <exclude reference="vqZ-KY-j8J"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -120,6 +131,7 @@
                                 <include reference="drS-Pp-8aj"/>
                                 <include reference="91k-qB-th4"/>
                                 <include reference="5CE-Ud-2co"/>
+                                <include reference="vqZ-KY-j8J"/>
                             </mask>
                         </variation>
                     </view>
@@ -127,6 +139,7 @@
                         <outlet property="enterMessageTextField" destination="91k-qB-th4" id="DJX-ST-W4j"/>
                         <outlet property="enterNameTextField" destination="drS-Pp-8aj" id="LeV-3X-zLc"/>
                         <outlet property="messageLabel" destination="Zy1-NQ-Zyn" id="1pR-qA-RAj"/>
+                        <outlet property="nameLabel" destination="vqZ-KY-j8J" id="fg4-mQ-Gs8"/>
                         <outlet property="postcardButton" destination="5CE-Ud-2co" id="1AL-eA-ZfT"/>
                     </connections>
                 </viewController>
